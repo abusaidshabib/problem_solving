@@ -2,8 +2,8 @@
 
 ## NeetCode Blind 75 Problem List
 
-1. Contains Duplicate
-2. Valid Anagram
+1. Contains Duplicate - ✅ Done
+2. Valid Anagram - 🔄 Revising
 3. Two Sum
 4. Group Anagrams
 5. Top K Frequent Elements

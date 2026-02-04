@@ -238,14 +238,14 @@ print(d)  # {'a': 10}
 
 ## ⚡ Quick Comparison Table
 
-| Type        | Best For             |
-| ----------- | -------------------- |
-| Counter     | Frequency counting   |
-| defaultdict | Auto-init values     |
-| deque       | Fast queue/stack     |
-| namedtuple  | Lightweight objects  |
-| ChainMap    | Layered configs      |
-| UserDict    | Custom dict behavior |
+| Type        | Best For                                   |
+| ----------- | ------------------------------------------ |
+| Counter     | Frequency counting                         |
+| defaultdict | Auto-init values flexible & programmable   |
+| deque       | Fast queue/stack                           |
+| namedtuple  | Lightweight objects                        |
+| ChainMap    | Layered configs                            |
+| UserDict    | Custom dict behavior                       |
 
 ---
 

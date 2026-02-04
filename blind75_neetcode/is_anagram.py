@@ -53,7 +53,7 @@ class Solution3:
 
         count = {}
 
-        for i in range(len(s)):
+        for i in range(len(s)): # O(n)
             count[s[i]] = count.get(s[i], 0) + 1
             count[t[i]] = count.get(t[i], 0) - 1
 

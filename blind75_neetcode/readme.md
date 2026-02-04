@@ -3,8 +3,8 @@
 ## NeetCode Blind 75 Problem List
 
 1. Contains Duplicate - ✅ Done
-2. Valid Anagram - 🔄 Revising
-3. Two Sum
+2. Valid Anagram - ✅ Done
+3. Two Sum - 🔄 Revision needed
 4. Group Anagrams
 5. Top K Frequent Elements
 6. Encode and Decode Strings

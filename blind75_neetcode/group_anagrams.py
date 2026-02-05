@@ -46,11 +46,42 @@ class Solution2:
                 op_dict[key] = []
                 op_dict[key].append(word)
 
-        for key in op_dict:
-            result.append(op_dict[key])
-
-        return result
+        return list(op_dict.values())
 
 
 solve = Solution2()
 print(solve.groupAnagrams(strs))
+
+from collections import Counter, defaultdict
+
+# using hashmap
+
+
+class Solution3:
+    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
+        res = defaultdict(list)
+
+        for word in strs:
+            count = [0] * 26
+
+            for c in word:
+                count[ord(c) - ord("a")] += 1
+
+            res[tuple(count)].append(word)
+
+        print(dict(res))
+
+        return list(res.values())
+
+# data
+"""
+{
+(1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0): ['act', 'cat'],
+(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0): ['pots', 'tops', 'stop'],
+(1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0): ['hat']
+}
+"""
+
+solve3 = Solution3()
+print(solve3.groupAnagrams(strs))
+
